@@ -5,5 +5,13 @@
     <string name="action_settings">Settings</string>
     <string name="error_connectivity">No se encontró señal de internet.</string>
     <string name="desc">.</string>
+    <string name="title_activity_kcologin">KCOLogin</string>
+    <string name="forgetPass">Olvidaste tu contraseña</string>
+    <string name="txt_soid">SOID</string>
+    <string name="txt_soid_r">e-mail/SOID</string>
+    <string name="txt_pass">PASSWORD</string>
+    <string name="txt_validation_r">Para recuperar tu contraseña, por favor anota tu correo  electrónico</string>
+    <string name="title_activity_kcorecover_password">KCORecoverPassword</string>
+
 
 </resources>

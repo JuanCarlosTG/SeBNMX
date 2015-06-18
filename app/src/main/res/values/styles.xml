@@ -28,6 +28,14 @@
         <item name="android:layout_height">match_parent</item>
     </style>
 
+    <!-- Custom styles -->
+    
+    <style name="editTextCustom" >
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/txt_login</item>
+
+    </style>
+
     <style name="dialog_progress" parent="@android:style/Theme.Dialog">
         <item name="android:windowFrame">@null</item>
         <item name="android:windowIsFloating">true</item>
@@ -74,5 +82,5 @@
     </style>
 
 
-    <!-- Custom styles -->
+    
 </resources>
