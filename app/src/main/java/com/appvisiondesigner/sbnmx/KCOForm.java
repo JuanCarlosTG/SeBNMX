@@ -11,19 +11,21 @@ import android.view.View;
 import android.widget.FrameLayout;
 
 
-public class KCORecoverPassword extends ActionBarActivity {
+public class KCOForm extends ActionBarActivity {
+
     private Toolbar toolbar;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kcorecover_password);
+        setContentView(R.layout.activity_kcoform);
 
         if (Build.VERSION.SDK_INT<19){
             FrameLayout statusBar = (FrameLayout) findViewById(R.id.status_bar);
             statusBar.setVisibility(View.GONE);
         }
 
-        toolbar = (Toolbar) findViewById(R.id.tool_bar2);
+        toolbar = (Toolbar) findViewById(R.id.tool_bar);
         setSupportActionBar(toolbar);
 
         getSupportActionBar().setHomeButtonEnabled(true);
@@ -33,7 +35,7 @@ public class KCORecoverPassword extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_kcorecover_password, menu);
+        getMenuInflater().inflate(R.menu.menu_kcoform, menu);
         return true;
     }
 

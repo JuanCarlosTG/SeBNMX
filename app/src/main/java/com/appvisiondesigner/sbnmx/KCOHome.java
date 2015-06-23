@@ -1,7 +1,6 @@
 package com.appvisiondesigner.sbnmx;
 
 import android.os.Build;
-import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -11,29 +10,28 @@ import android.view.View;
 import android.widget.FrameLayout;
 
 
-public class KCORecoverPassword extends ActionBarActivity {
+public class KCOHome extends ActionBarActivity {
+
     private Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_kcorecover_password);
+        setContentView(R.layout.activity_kcohome);
 
         if (Build.VERSION.SDK_INT<19){
             FrameLayout statusBar = (FrameLayout) findViewById(R.id.status_bar);
             statusBar.setVisibility(View.GONE);
         }
 
-        toolbar = (Toolbar) findViewById(R.id.tool_bar2);
+        toolbar = (Toolbar) findViewById(R.id.tool_bar);
         setSupportActionBar(toolbar);
-
-        getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_kcorecover_password, menu);
+        getMenuInflater().inflate(R.menu.menu_kcohome, menu);
         return true;
     }
 
@@ -47,10 +45,6 @@ public class KCORecoverPassword extends ActionBarActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
-        }
-
-        if (id == R.id.home){
-            NavUtils.navigateUpFromSameTask(this);
         }
 
         return super.onOptionsItemSelected(item);

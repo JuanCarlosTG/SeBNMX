@@ -6,12 +6,39 @@
     <string name="error_connectivity">No se encontró señal de internet.</string>
     <string name="desc">.</string>
     <string name="title_activity_kcologin">KCOLogin</string>
+    <string name="register_l">Regístrate</string>
     <string name="forgetPass">Olvidaste tu contraseña</string>
-    <string name="txt_soid">SOID</string>
-    <string name="txt_soid_r">e-mail/SOID</string>
+    <string name="uploadPhoto">Subir foto de perfil</string>
+    <string name="txt_soid">SOEID</string>
+    <string name="txt_soid_r">e-mail/SOEID</string>
     <string name="txt_pass">PASSWORD</string>
     <string name="txt_validation_r">Para recuperar tu contraseña, por favor anota tu correo  electrónico</string>
     <string name="title_activity_kcorecover_password">KCORecoverPassword</string>
+    <string name="title_activity_kcoregister">Regístrate</string>
+
+    <string name="r_name">NOMBRE</string>
+    <string name="r_state">ESTADO DE LA REPÚBLICA</string>
+    <string name="r_email">E-MAIL</string>
+    <string name="r_password">PASSWORD</string>
+    <string name="r_genre">SEXO</string>
+    <string name="r_med_service">SERVICIO MÉDICO</string>
+    <string name="r_blood_type">TIPO DE SANGRE</string>
+    <string name="r_hobbies">HOBBIES</string>
+    <string name="title_activity_kcologin_problems">Problemas con login</string>
+
+    <string name="txt1_problems">¿Tienes problemas para acceder?</string>
+    <string name="txt2_problems">escribenos a mail@banamex.com</string>
+    <string name="txt3_problems">o contesta el formulario</string>
+
+    <string name="message_mail">Enviar correo electrónico</string>
+    <string name="agree">Ok</string>
+    <string name="disagree">Cancelar</string>
+    <string name="title_activity_kcoform">Formulario</string>
+
+    <string name="txt_check_prob">Problemas de acceso</string>
+    <string name="txt_check_sug">Sugerencias</string>
+    <string name="txt_check_que">Quejas</string>
+    <string name="title_activity_kcohome">KCOHome</string>
 
 
 </resources>

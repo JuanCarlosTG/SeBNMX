@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical"
+    android:background="@drawable/formulario_back"
+    tools:context="com.appvisiondesigner.sbnmx.KCOForm">
+
+    <FrameLayout
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="25sp"
+        android:background="?attr/colorPrimary"/>
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar">
+    </include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:paddingRight="@dimen/activity_horizontal_margin4"
+        android:paddingLeft="@dimen/activity_horizontal_margin4"
+        android:layout_below="@id/tool_bar">
+
+        <RelativeLayout
+            android:id="@+id/form_letter"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/formulario_carta"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="-10dp">
+
+            <EditText
+                android:id="@+id/inp_soid_f"
+                android:hint="@string/txt_soid"
+                style="@style/customInputF"
+                android:drawableLeft="@drawable/formulario_icono_geid"/>
+
+            <CheckBox
+                android:id="@+id/checkF_problems"
+                android:text="@string/txt_check_prob"
+                style="@style/customCheckboxF"
+                android:layout_below="@+id/inp_soid_f"/>
+
+            <CheckBox
+                android:id="@+id/checkF_sug"
+                android:text="@string/txt_check_sug"
+                style="@style/customCheckboxF"
+                android:layout_below="@+id/checkF_problems"/>
+
+            <CheckBox
+                android:id="@+id/checkF_que"
+                android:text="@string/txt_check_que"
+                style="@style/customCheckboxF"
+                android:layout_below="@+id/checkF_sug"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:ems="10"
+                android:id="@+id/message_f"
+                android:layout_below="@+id/checkF_que"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"/>
+
+            <ImageButton
+                style="@style/customInput"
+                android:id="@+id/btnRegister"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_form"
+                android:layout_below="@+id/message_f"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginRight="38dp" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/formulario_buzon"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-30dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
